@@ -4,7 +4,9 @@
   "description": "Evernote clone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-dev": "http-server ./src -i",
+    "start": "npm run serve-dev"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/nyvek28/notie/issues"
   },
-  "homepage": "https://github.com/nyvek28/notie#readme"
+  "homepage": "https://github.com/nyvek28/notie#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
 }
