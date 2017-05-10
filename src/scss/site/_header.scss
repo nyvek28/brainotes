@@ -3,6 +3,33 @@
   height: $header-height;
   z-index: $header-z-index;
 
+  %side-assets {
+    align-items: center;
+    display: flex;
+    height: $header-height;
+    justify-content: center;
+    position: relative;
+  }
+
+  .logo-container {
+    @extend %side-assets;
+    right: $header-side-assets-center-offset;
+
+    .logo {
+      border-radius: $header-user-photo-border-radius;
+      cursor: pointer;
+      max-height: $header-user-photo-dimension;
+      max-width: $header-user-photo-dimension;
+      overflow: hidden;
+
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
   .main-menu {
     align-items: center;
     display: flex;
@@ -47,10 +74,8 @@
   }
 
   .user-photo-container {
-    align-items: center;
-    display: flex;
-    height: $header-height;
-    justify-content: center;
+    @extend %side-assets;
+    left: $header-side-assets-center-offset;
 
     .user-photo {
       border-radius: $header-user-photo-border-radius;
