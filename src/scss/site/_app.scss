@@ -1,0 +1,9 @@
+.root {
+  height: $app-height;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.container-fluid {
+  width: 100%;
+}
