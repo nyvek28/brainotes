@@ -1,12 +1,12 @@
 .main-section{
     background-color: $main-section-background-color;
-    height: -webkit-calc(#{$app-height} - #{$header-height});
+    height: $main-section-height;
 
     .editor-container{
 
         display: flex;
         flex-direction: column;
-        height: -webkit-calc(#{$app-height} - #{$header-height});
+        height: $main-section-height;
         justify-content: flex-end;
 
         .editor{

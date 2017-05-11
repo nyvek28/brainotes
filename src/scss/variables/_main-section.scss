@@ -1,3 +1,4 @@
+$main-section-height: -webkit-calc(#{$app-height} - #{$header-height});
 $main-section-background-color: white;
 $main-section-note-content: 75vh;
 $main-section-note-title-font-size: 4rem;
