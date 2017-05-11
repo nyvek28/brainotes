@@ -1,0 +1,89 @@
+.editor-control-section {
+    background-color: transparent;
+    .editor-control-container {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        text-align: center;
+        .font-size,
+        .aling {
+            a .btn-default {
+                background-color: transparent;
+                color: black;
+                button {
+                    i {
+                        color: $header-icon-background-color;
+                        font-size: $header-icon-font-size;
+                        transition: $header-icon-button-trasition-time ease-in;
+                    }
+                }
+            }
+        }
+        .editor-control-container-center {
+            margin: 2.2rem;
+            display: flex;
+            flex-direction: column;
+            button {
+                margin: 0.5rem;
+                border-radius: $header-icon-border-radius;
+                border: 0;
+                background-color: transparent;
+                transition: $header-icon-button-trasition-time ease-in;
+                width: 1.5rem;
+                height: 1.5rem;
+                i {
+                    color: black;
+                    font-size: $header-icon-font-size;
+                    transition: $header-icon-button-trasition-time ease-in;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+
+.editor-control-section {
+    background-color: transparent;
+    position: relative;
+    top: 35px;
+    .editor-control-container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .font-size,
+        .aling {
+            .btn-default {
+                background-color: transparent;
+                color: $editor-control-font-color;
+                button {
+                    i {
+                        color: $header-icon-background-color;
+                        font-size: $header-icon-font-size;
+                    }
+                }
+            }
+        }
+        .editor-control-container-center {
+            margin: 0.2rem;
+            button {
+                background-color: transparent;
+                border-radius: $editor-control-icon-border-radius;
+                border: 0;
+                margin: $editor-control-icon-button-margin;
+                width: $editor-control-icon-button-dimension;
+                height: $editor-control-icon-button-dimension;
+                i {
+                    color: $editor-control-font-color;
+                    font-size: $header-icon-font-size;
+                    transition: $header-icon-button-trasition-time ease-in;
+                }
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+    }
+}*/
