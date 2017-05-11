@@ -41,3 +41,4 @@ jspm_packages
 
 # builds
 src/css
+src/js
