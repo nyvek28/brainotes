@@ -38,6 +38,10 @@ gulp.task('js', () => {
           .pipe(gulp.dest('./src/js'));
 });
 
+gulp.task('js:watch', () => {
+  gulp.watch(jsFilesPath, ['js']);
+});
+
 gulp.task('minify:js', () => {
   return gulp.src('./src/js/bundle.js')
               .pipe(uglify())
@@ -45,4 +49,5 @@ gulp.task('minify:js', () => {
               .pipe(gulp.dest('./src/js'))
 });
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'js']);
+gulp.task('watch', ['sass:watch', 'js:watch']);
