@@ -1,6 +1,6 @@
 .main-section{
     background-color: $main-section-background-color;
-    height: -webkit-calc(#{$app-height} - #{$header-height});  
+    height: -webkit-calc(#{$app-height} - #{$header-height});
 
     .editor-container{
 
@@ -9,15 +9,15 @@
         height: -webkit-calc(#{$app-height} - #{$header-height});
         justify-content: flex-end;
 
-        .editor{ 
-            box-shadow: $main-section-editor-shadow;
-            
+        .editor{
+            padding: 0 40px;
+
             .note-title{
                 border: none;
                 font-size: $main-section-note-title-font-size;
                 line-height: $main-section-note-title-line-height;
                 width: 100%;
-               
+
                 &:focus{
                     outline: none;
                 }
@@ -25,14 +25,13 @@
             }
 
             .note-content{
-            
                 border: none;
                 height: $main-section-note-content;
                 overflow: auto;
                 outline: none;
                 resize: none;
                 width: 100%;
-            
+
             }
         }
     }
