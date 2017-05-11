@@ -1,22 +1,18 @@
 .editor-control-section {
-    background-color: transparent;
-    height: $main-section-height;
-    display: flex;
     align-items: center;
+    background-color: transparent;
+    display: flex;
     justify-content: center;
-
+    height: $main-section-height;
     .editor-control-container {
         display: flex;
         flex-direction: column;
-
         .font-size,
         .aling {
             a .btn-default {
                 background-color: transparent;
-                color: black;
-
+                color: $editor-control-icon-button-color;
                 button {
-
                     i {
                         color: $header-icon-background-color;
                         font-size: $header-icon-font-size;
@@ -28,23 +24,20 @@
         .editor-control-container-center {
             display: flex;
             flex-direction: column;
-
             button {
-                margin: 0.5rem;
+                background-color: transparent;
                 border-radius: $header-icon-border-radius;
                 border: 0;
-                background-color: transparent;
+                height: $editor-control-icon-button-dimension;
+                margin: $editor-control-icon-button-dimension;
                 transition: $header-icon-button-trasition-time ease-in;
                 width: 1.5rem;
-                height: 1.5rem;
-
                 &:focus {
-                  outline: 0;
+                    outline: 0;
                 }
-
                 i {
-                    color: black;
-                    font-size: 1.1rem;
+                    color: $editor-control-icon-button-color;
+                    font-size: $editor-control-icon-button-font;
                     transition: $header-icon-button-trasition-time ease-in;
                 }
             }
