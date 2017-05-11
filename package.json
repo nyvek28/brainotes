@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve-dev": "http-server ./src -i",
-    "scss-to-css": "node-sass 'src/scss/main.scss' 'src/css/main.css' --output-style compressed",
-    "scss-to-css-watch": "npm run scss-to-css -- -w",
-    "start": "npm run scss-to-css-watch | npm run serve-dev"
+    "scss-to-css": "gulp sass",
+    "scss-to-css-watch": "gulp sass:watch",
+    "start": "npm run scss-to-css-watch & npm run serve-dev"
   },
   "repository": {
     "type": "git",
