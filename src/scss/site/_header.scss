@@ -38,8 +38,12 @@
     .icon-container {
       display: flex;
       justify-content: space-between;
-      max-width: $header-icon-container-max-width;
+      max-width: 200px;
       width: 100%;
+
+      @include sm {
+        max-width: $header-icon-container-max-width;
+      }
 
       button {
         border-radius: $header-icon-border-radius;
@@ -67,6 +71,12 @@
 
         &:focus {
           outline: 0;
+        }
+
+        &.hide-on-desktop {
+          @include sm {
+            display: none;
+          }
         }
       }
     }

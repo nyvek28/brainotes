@@ -1,0 +1,43 @@
+.editor-side-tools {
+  height: $main-section-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .tools-container {
+    display: flex;
+    flex-direction: column;
+    max-width: $header-icon-container-max-width;
+    width: 100%;
+
+    button {
+      border-radius: 25px;
+      border: 1px solid #000;
+      background-color: transparent;
+      transition: $header-icon-button-trasition-time ease-in;
+      height: 30px;
+      width: 30px;
+      padding-top: 2.5px;
+      padding-left: $header-icon-button-padding;
+      margin-bottom: 5px;
+
+      i {
+        color: #000;
+        font-size: 1.1rem;
+        transition: $header-icon-button-trasition-time ease-in;
+      }
+
+      &:hover {
+        background-color: #000;
+
+        i {
+          color: #FFF;
+        }
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
