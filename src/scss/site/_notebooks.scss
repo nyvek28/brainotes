@@ -1,0 +1,17 @@
+.tags-and-notebooks-container {
+  height: $main-section-height;
+  background-color: white;
+
+  .tags-and-notebooks {
+    margin: 70px auto 0;
+    max-width: 500px;
+
+    .tags-and-notebooks-search {
+      input {
+        width: 100%;
+        border: 0;
+        padding: 10px;
+      }
+    }
+  }
+}

@@ -2,6 +2,11 @@
     background-color: $main-section-background-color;
     height: $main-section-height;
 
+    & > .row {
+      position: absolute;
+      width: 100%;
+    }
+
     .editor-container{
 
         display: flex;

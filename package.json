@@ -8,7 +8,7 @@
     "serve-dev": "http-server ./src -i",
     "scss-to-css": "gulp sass",
     "scss-to-css-watch": "gulp sass:watch",
-    "start": "npm run scss-to-css-watch & npm run serve-dev"
+    "start": "gulp watch & npm run serve-dev"
   },
   "repository": {
     "type": "git",

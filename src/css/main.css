@@ -5893,6 +5893,9 @@ button.close {
 .main-section {
   background-color: white;
   height: -webkit-calc(100vh - 80px); }
+  .main-section > .row {
+    position: absolute;
+    width: 100%; }
   .main-section .editor-container {
     display: flex;
     flex-direction: column;
@@ -5945,5 +5948,16 @@ button.close {
           color: #FFF; }
       .editor-side-tools .tools-container button:focus {
         outline: 0; }
+
+.tags-and-notebooks-container {
+  height: -webkit-calc(100vh - 80px);
+  background-color: white; }
+  .tags-and-notebooks-container .tags-and-notebooks {
+    margin: 70px auto 0;
+    max-width: 500px; }
+    .tags-and-notebooks-container .tags-and-notebooks .tags-and-notebooks-search input {
+      width: 100%;
+      border: 0;
+      padding: 10px; }
 
 /*# sourceMappingURL=maps/main.css.map */

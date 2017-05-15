@@ -26,7 +26,7 @@
                             <button type="button" name="button" class="hide-on-desktop">
                               <i class="fa fa-plus" aria-hidden="true"></i>
                             </button>
-                            <button type="button" name="button" class="hide-on-desktop">
+                            <button type="button" name="button" class="hide-on-desktop clear-editor-button">
                               <i class="fa fa-times" aria-hidden="true"></i>
                             </button>
                             <button type="button" name="button">
@@ -58,7 +58,7 @@
                       <button type="button" name="button">
                         <i class="fa fa-plus" aria-hidden="true"></i>
                       </button>
-                      <button type="button" name="button">
+                      <button type="button" name="button" class="clear-editor-button">
                         <i class="fa fa-times" aria-hidden="true"></i>
                       </button>
                     </div>
@@ -67,16 +67,49 @@
                 <div class="col-sm-8 col-sx-12">
                     <div class="editor-container">
                         <div class="editor">
-                            <input class="note-title" type="text" placeholder="Untitled">
-                            <textarea class="note-content" id="" placeholder="Make your dreams come true..."></textarea>
+                            <input class="note-title" type="text" placeholder="Untitled" id="editor-title-input">
+                            <textarea class="note-content" placeholder="Make your dreams come true..." id="editor-text-area-input"></textarea>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 tags-and-notebooks-container">
+                <div class="tags-and-notebooks">
+                  <div class="tags-and-notebooks-search">
+                    <input type="text" name="" value="" class="searchbar" placeholder="Look it up...">
+                  </div>
+                  <div class="tags-and-notebooks-tab">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a data-toggle="tab" href="#notebooks">Notebooks</a></li>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#tags">Tags</a></li>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade in active" id="notebooks">
+                        <ul>
+                          <li>Songs</li>
+                          <li>Recepies</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="tags">
+                        <ul>
+                          <li>Song</li>
+                          <li>Recepie</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </main>
 
     </div>
     <script src="https://use.fontawesome.com/f7e86d1c5a.js"></script>
-    <script src="js/bundle.min.js" charset="utf-8"></script>
+    <script src="js/bundle.js" charset="utf-8"></script>
   </body>
 </html>
