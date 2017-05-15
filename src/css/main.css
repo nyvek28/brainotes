@@ -5960,4 +5960,78 @@ button.close {
       border: 0;
       padding: 10px; }
 
+.aside-notes {
+  overflow: auto;
+  background-color: white;
+  height: -webkit-calc(100vh - 80px);
+  position: relative;
+  top: 0px;
+  right: -2000px;
+  transition: all 2s; }
+  .aside-notes .navbar-default {
+    background-color: transparent;
+    border-color: transparent; }
+    .aside-notes .navbar-default button {
+      background: transparent;
+      border-color: transparent;
+      color: #00af33; }
+      .aside-notes .navbar-default button:hover {
+        color: gray; }
+    .aside-notes .navbar-default .navbar-toggle {
+      border-color: #00af33; }
+      .aside-notes .navbar-default .navbar-toggle .icon-bar {
+        background-color: #00af33; }
+  .aside-notes .dashboard {
+    height: 500px; }
+    .aside-notes .dashboard .note-list, .aside-notes .dashboard .tag-list {
+      margin-top: 2rem; }
+      .aside-notes .dashboard .note-list .note-list-content, .aside-notes .dashboard .note-list .tag-list-content, .aside-notes .dashboard .tag-list .note-list-content, .aside-notes .dashboard .tag-list .tag-list-content {
+        overflow: auto;
+        height: 200px; }
+        .aside-notes .dashboard .note-list .note-list-content .note, .aside-notes .dashboard .note-list .note-list-content .tag, .aside-notes .dashboard .note-list .tag-list-content .note, .aside-notes .dashboard .note-list .tag-list-content .tag, .aside-notes .dashboard .tag-list .note-list-content .note, .aside-notes .dashboard .tag-list .note-list-content .tag, .aside-notes .dashboard .tag-list .tag-list-content .note, .aside-notes .dashboard .tag-list .tag-list-content .tag {
+          border-bottom: 1px solid #ddd;
+          border-radius: 2px;
+          padding: 0.5rem;
+          background-color: white; }
+          .aside-notes .dashboard .note-list .note-list-content .note:hover, .aside-notes .dashboard .note-list .note-list-content .tag:hover, .aside-notes .dashboard .note-list .tag-list-content .note:hover, .aside-notes .dashboard .note-list .tag-list-content .tag:hover, .aside-notes .dashboard .tag-list .note-list-content .note:hover, .aside-notes .dashboard .tag-list .note-list-content .tag:hover, .aside-notes .dashboard .tag-list .tag-list-content .note:hover, .aside-notes .dashboard .tag-list .tag-list-content .tag:hover {
+            cursor: pointer;
+            background-color: #00af33; }
+  .aside-notes .notes-container .note {
+    border-radius: 2px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: gray; }
+
+.transform-active {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none; }
+  .navbar-toggle {
+    display: block; }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+  .navbar-nav > li {
+    float: none; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .navbar-text {
+    float: none;
+    margin: 15px 0; }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+  .collapsing {
+    overflow: hidden !important; } }
+
 /*# sourceMappingURL=maps/main.css.map */
