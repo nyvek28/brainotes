@@ -32,7 +32,7 @@
                             <button type="button" name="button">
                               <i class="fa fa-book" aria-hidden="true"></i>
                             </button>
-                            <button type="button" name="button">
+                            <button type="button" name="button" id="tag">
                               <i class="fa fa-tags" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -50,107 +50,6 @@
         <main class="main-section container-fluid">
             <div class="row">
                 <div class="col-md-2 col-sm-2 hidden-xs">
-                    <section class="editor-control-section container-fluid">
-                        <div class="editor-control-container">
-                            <!-- <div class="btn-group font-size">
-                                <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-font" aria-hidden="true"></i>
-                                <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <button type="button" name="button">8</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">10</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">12</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">14</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">16</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">20</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">24</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">36</button>
-                                    </li>
-                                </ul>
-                            </div> -->
-
-                            <div class="editor-control-container-center">
-
-                                <!--    <button type="button" name="button">
-                          <i class="fa fa-book" aria-hidden="true"></i>
-                        </button>
-                            <button type="button" name="button">
-                          <i class="fa fa-tags" aria-hidden="true"></i>
-                        </button>-->
-                                <button type="button" name="button">
-                                  <i class="fa fa-bold" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-italic" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-underline" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-strikethrough" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-code" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-list-ul" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-list-ol" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-link" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-paperclip" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-google" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" name="button">
-                                  <i class="fa fa-table" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <!-- <div class="btn-group aling">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-align-justify" aria-hidden="true"></i><span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <button type="button" name="button">
-                                          <i class="fa fa-align-center" aria-hidden="true"></i>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">
-                                          <i class="fa fa-align-left" aria-hidden="true"></i>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button" name="button">
-                                          <i class="fa fa-align-right" aria-hidden="true"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div> -->
-                        </div>
-                    </section>
-
                 </div>
                 <div class="col-md-8 col-sm-8 col-sx-12">
                     <div class="editor-container">
@@ -163,9 +62,149 @@
                 <div class="col-md-2 col-sm-2 hidden-xs"></div>
             </div>
         </main>
-
+        <aside id="aside" class="aside-notes container-fluid">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <button class="navbar-brand">
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        </button>
+                        </div>                        
+                </nav>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <form>
+                                    <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                    <button type="" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                                <div class="dashboard">
+                                        <div class="note-list">
+                                            <h3 class="note-list-title">Notas</h3>
+                                            <div class="note-list-content">
+                                            <div class="note">
+                                                <h4 class="note-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="note">
+                                                <h4 class="note-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="note">
+                                                <h4 class="note-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="note">
+                                                <h4 class="note-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="note">
+                                                <h4 class="note-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="note">
+                                                <h4 class="note-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="note">
+                                                <h4 class="note-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="tag-list">
+                                            <h3 class="tag-list__title">Tags</h3>
+                                            <div class="tag-list-content">
+                                            <div class="tag">
+                                                <h4 class="tag-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="tag">
+                                                <h4 class="tag-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="tag">
+                                                <h4 class="tag-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            <div class="tag">
+                                                <h4 class="tag-title"> Titulo</h4>
+                                                <p></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                            
+                            
+                            
+                            
+                            </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-9 col-xs-12">
+                        <div class="notes-container">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="note">
+                                        <h4 class="note-title"> Titulo</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit necessi
+                                            tatibus quo tempore asperiores eum,
+                                            umenda qui debitis voluptates, atque perspiciatis numquam, voluptatem perferendis. tempora sint ullam corrupti eos molestiae in as
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="note">
+                                        <h4 class="note-title"> Titulo</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit necessi
+                                            tatibus quo tempore asperiores eum,
+                                            umenda qui debitis voluptates, atque perspiciatis numquam, voluptatem perferendis. tempora sint ullam corrupti eos molestiae in as
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="note">
+                                        <h4 class="note-title"> Titulo</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit necessi
+                                            tatibus quo tempore asperiores eum,
+                                            umenda qui debitis voluptates, atque perspiciatis numquam, voluptatem perferendis. tempora sint ullam corrupti eos molestiae in as
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="note">
+                                        <h4 class="note-title"> Titulo</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit necessi
+                                            tatibus quo tempore asperiores eum,
+                                            umenda qui debitis voluptates, atque perspiciatis numquam, voluptatem perferendis. tempora sint ullam corrupti eos molestiae in as
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </aside>
     </div>
     <script src="https://use.fontawesome.com/f7e86d1c5a.js"></script>
     <script src="js/bundle.min.js" charset="utf-8"></script>
+    <script>
+        document.getElementById("tag").addEventListener("click", function( event ) {
+            document.getElementById("aside").classList.toggle("transform-active")
+        }, false);
+    </script>
   </body>
 </html>
